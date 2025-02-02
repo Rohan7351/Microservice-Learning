@@ -20,7 +20,7 @@ public class EmployeeController {
 
     @PostMapping
     public Employee add(@RequestBody Employee employee) {
-        LOGGER.info("Employee add: {}", employee);
+        LOGGER.info("Employee added: {}", employee);
         return repository.add(employee);
     }
 
